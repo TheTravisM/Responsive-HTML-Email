@@ -1,1 +1,161 @@
-@import './scss/style.scss'
+/* Color Mixins */
+/* RGB Colors */
+/* -- ------------- --*/
+/* -- Mastert Reset --*/
+/* -- ------------- --*/
+*,
+*:before,
+*:after {
+  background-color: transparent;
+  border-style: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  text-transform: none;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* -- ------ --*/
+/* -- Layout --*/
+/* -- ------ --*/
+.container {
+  background: #543d7c;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #543d7c 0%, #241026 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: lime;
+  min-width: 350px;
+  max-width: 750px;
+  display: flex;
+  height: 100%;
+  min-height: 700px;
+  border: 1px solid violet;
+  margin: 0 auto;
+}
+
+.inner-container {
+  border: 2px solid #39ff14;
+  background: #543d7c;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #543d7c 0%, #241026 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: lime;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  clip-path: polygon(0% 20px, 20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px));
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#crest-svg {
+  position: absolute;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  opacity: .2;
+}
+
+#crest-svg g {
+  fill: #fff;
+}
+
+#lion-svg {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 150px;
+}
+
+#lion-svg g {
+  fill: #39ff14;
+}
+
+#stag-svg {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 150px;
+}
+
+#stag-svg g {
+  fill: #39ff14;
+}
+
+#corner-top-right-svg {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 150px;
+}
+
+#corner-top-right-svg g {
+  fill: #39ff14;
+}
+
+#corner-bottom-left-svg {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 150px;
+}
+
+#corner-bottom-left-svg g {
+  fill: #39ff14;
+}
+
+.intro {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.title {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.btn-RSVP {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 30px auto;
+  padding: 5px;
+  color: #fff;
+  border: 1px solid #00ca00;
+  border-radius: 5px;
+  background-color: #39ff14;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
