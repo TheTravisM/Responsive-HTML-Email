@@ -24,19 +24,6 @@
   margin: 20px;
   padding: 20px;
   text-align: center;
-
-  clip-path: 
-    polygon(
-      0% 20px,                 /* top left */
-      20px 0%,                 /* top left */
-      calc(100% - 20px) 0%,    /* top right */
-      100% 20px,               /* top right */
-      100% calc(100% - 20px),  /* bottom right */
-      calc(100% - 20px) 100%,  /* bottom right */
-      20px 100%,               /* bottom left */
-      0 calc(100% - 20px)      /* bottom left */
-    );
-
 }
 
 

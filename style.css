@@ -67,7 +67,6 @@ html, body {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  clip-path: polygon(0% 20px, 20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px));
 }
 
 .content {
