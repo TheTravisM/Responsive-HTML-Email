@@ -35,12 +35,13 @@ html, body {
   /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center, #543d7c 0%, #241026 99%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
+  display: flex;
+  flex: 1;
   color: #a3d291;
   min-width: 350px;
   max-width: 750px;
-  display: flex;
   height: 100%;
   min-height: 700px;
   border: 1px solid violet;
@@ -48,7 +49,8 @@ html, body {
 }
 
 .inner-container {
-  border: 2px solid #a3d291;
+  display: flex;
+  flex: 1;
   background: #543d7c;
   /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
@@ -57,12 +59,14 @@ html, body {
   /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center, #543d7c 0%, #241026 99%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
+  text-shadow: 2px 2px #000;
+  border: 2px solid #a3d291;
+  border-radius: 0 35%;
+  box-shadow: 0px 0px 20px #000;
   color: #a3d291;
   position: relative;
-  display: block;
-  width: 100%;
   margin: 20px;
   padding: 20px;
   text-align: center;
@@ -71,6 +75,7 @@ html, body {
 .content {
   position: relative;
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 
@@ -89,10 +94,16 @@ html, body {
 }
 
 #lion-svg {
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
   position: absolute;
   top: -10px;
   left: -10px;
   width: 150px;
+}
+
+#lion-svg path {
+  fill: #a3d291;
 }
 
 #lion-svg g {
@@ -100,10 +111,16 @@ html, body {
 }
 
 #stag-svg {
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
   position: absolute;
   bottom: -10px;
   right: -10px;
   width: 150px;
+}
+
+#stag-svg path {
+  fill: #a3d291;
 }
 
 #stag-svg g {
@@ -111,10 +128,17 @@ html, body {
 }
 
 #corner-top-right-svg {
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: -2px;
+  right: -2px;
   width: 150px;
+  transform: rotate(180deg);
+}
+
+#corner-top-right-svg path {
+  fill: #a3d291;
 }
 
 #corner-top-right-svg g {
@@ -122,13 +146,33 @@ html, body {
 }
 
 #corner-bottom-left-svg {
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
   position: absolute;
-  bottom: -10px;
-  left: -10px;
+  bottom: -2px;
+  left: -2px;
   width: 150px;
 }
 
+#corner-bottom-left-svg path {
+  fill: #a3d291;
+}
+
 #corner-bottom-left-svg g {
+  fill: #a3d291;
+}
+
+#title-svg {
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
+  max-width: 80%;
+}
+
+#title-svg path {
+  fill: #a3d291;
+}
+
+#title-svg g {
   fill: #a3d291;
 }
 
@@ -145,11 +189,9 @@ html, body {
 }
 
 .btn-RSVP {
-  height: 40px;
-  line-height: 40px;
   text-align: center;
   margin: 30px auto;
-  padding: 5px;
+  padding: 20px 25px;
   color: #fff;
   border: 1px solid #00ca00;
   border-radius: 5px;

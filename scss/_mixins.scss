@@ -1,13 +1,38 @@
-@mixin radial-gradient-dark-purple { 
-  background: #543d7c; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #543d7c 0%,#241026 99%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #543d7c 0%,#241026 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+@mixin radial-gradient-dark-purple {
+  background: #543d7c;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #543d7c 0%, #241026 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 @mixin svg-fill-color {
+  path {
+    fill: $mint;
+  }
   g {
     fill: $mint;
   }
+}
+
+@mixin drop-shadow {
+  -webkit-filter: drop-shadow( 5px 5px 5px #000 ); 
+          filter: drop-shadow( 5px 5px 5px #000 );
+}
+
+@mixin drop-shadow-text {
+  text-shadow: 2px 2px #000;
+}
+
+@mixin flex-box-default {
+  display: flex;
+  flex: 1;
+  //align-items: center;
+  //align-content: center;
+  //justify-content: center;
 }
