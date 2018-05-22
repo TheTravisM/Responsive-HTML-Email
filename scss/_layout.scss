@@ -6,20 +6,16 @@
   @include radial-gradient-dark-purple;
   @include flex-box-default;
   color: $mint;
-  min-width: 350px;
   max-width: 750px;
-  height: 100%;
-  min-height: 700px;
-  border: 1px solid violet;
   margin: 0 auto;
 }
 
 .inner-container {
   @include flex-box-default;
   @include radial-gradient-dark-purple;
-  @include drop-shadow-text;
+  @include sans-serif-font;
   border: 2px solid $mint;
-  border-radius: 0 35%;
+  border-radius: 0 130px; 
   box-shadow: 0px 0px 20px #000;
   color: $mint;
   position: relative;
@@ -28,92 +24,68 @@
   text-align: center;
 }
 
+// Small devices (landscape phones, 400px and up)
+@media (min-width: 400px) { .inner-container { -moz-border-radius: 0 140px; -webkit-border-radius: 0 140px; border-radius: 0 140px; } }
+@media (min-width: 450px) { .inner-container { -moz-border-radius: 0 155px; -webkit-border-radius: 0 155px; border-radius: 0 155px; } }
+@media (min-width: 500px) { .inner-container { -moz-border-radius: 0 170px; -webkit-border-radius: 0 170px; border-radius: 0 170px; } }
+@media (min-width: 550px) { .inner-container { -moz-border-radius: 0 190px; -webkit-border-radius: 0 190px; border-radius: 0 190px; } }
+@media (min-width: 600px) { .inner-container { -moz-border-radius: 0 200px; -webkit-border-radius: 0 200px; border-radius: 0 200px; } } 
+@media (min-width: 650px) { .inner-container { -moz-border-radius: 0 220px; -webkit-border-radius: 0 220px; border-radius: 0 220px; } }
+@media (min-width: 700px) { .inner-container { -moz-border-radius: 0 250px; -webkit-border-radius: 0 250px; border-radius: 0 250px; } }
 
 .content {
   position: relative;
   @include flex-box-default;
   flex-direction: column;
+  align-items: center;
 }
 
-#crest-svg { 
-  position: absolute;
-  height: 300px;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  opacity: .2;
-  g {
-    fill: #fff;
-  }
+p { 
+  @include drop-shadow-text;
+  text-align: center;
+  line-height: 32px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px; 
 }
 
-#lion-svg {
-  @include svg-fill-color;
-  @include drop-shadow;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 150px;
-}
-
-#stag-svg {
-  @include svg-fill-color;
-  @include drop-shadow;
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  width: 150px;
-}
-
-#corner-top-right-svg {
-  @include svg-fill-color;
-  @include drop-shadow;
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  width: 150px;
-  transform: rotate(180deg);
-}
-
-#corner-bottom-left-svg {
-  @include svg-fill-color;
-  @include drop-shadow;
-  position: absolute;
-  bottom: -2px;
-  left: -2px;
-  width: 150px;
-}
+.intro { }
 
 #title-svg {
-  @include svg-fill-color;
-  @include drop-shadow;
-  max-width: 80%;
+  margin-bottom: 20px;
 }
 
-.intro {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 16px;
-}
+.date { }
 
-.title {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 24px;
-}
+.location { }
 
-.date {
-
-}
-
-.btn-RSVP {
-  text-align: center;
+.btn {
+  @include sans-font;
   margin: 30px auto;
-  padding: 20px 25px;
+  padding: 15px 25px;
   color: #fff;
   border: 1px solid $secondary-color-dark;
   border-radius: 5px;
-  background-color: $secondary-color;
+  background-color: $mint;
   cursor: pointer;
 }
+
+.btn-RSVP {
+
+}
+
+.btn-registry { 
+
+}
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

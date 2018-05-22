@@ -36,3 +36,11 @@
   //align-content: center;
   //justify-content: center;
 }
+
+@mixin sans-serif-font {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@mixin sans-font {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

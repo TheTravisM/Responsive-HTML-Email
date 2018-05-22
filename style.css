@@ -40,11 +40,7 @@ html, body {
   display: flex;
   flex: 1;
   color: #a3d291;
-  min-width: 350px;
   max-width: 750px;
-  height: 100%;
-  min-height: 700px;
-  border: 1px solid violet;
   margin: 0 auto;
 }
 
@@ -61,9 +57,9 @@ html, body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
-  text-shadow: 2px 2px #000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   border: 2px solid #a3d291;
-  border-radius: 0 35%;
+  border-radius: 0 130px;
   box-shadow: 0px 0px 20px #000;
   color: #a3d291;
   position: relative;
@@ -72,21 +68,125 @@ html, body {
   text-align: center;
 }
 
+@media (min-width: 400px) {
+  .inner-container {
+    -moz-border-radius: 0 140px;
+    -webkit-border-radius: 0 140px;
+    border-radius: 0 140px;
+  }
+}
+
+@media (min-width: 450px) {
+  .inner-container {
+    -moz-border-radius: 0 155px;
+    -webkit-border-radius: 0 155px;
+    border-radius: 0 155px;
+  }
+}
+
+@media (min-width: 500px) {
+  .inner-container {
+    -moz-border-radius: 0 170px;
+    -webkit-border-radius: 0 170px;
+    border-radius: 0 170px;
+  }
+}
+
+@media (min-width: 550px) {
+  .inner-container {
+    -moz-border-radius: 0 190px;
+    -webkit-border-radius: 0 190px;
+    border-radius: 0 190px;
+  }
+}
+
+@media (min-width: 600px) {
+  .inner-container {
+    -moz-border-radius: 0 200px;
+    -webkit-border-radius: 0 200px;
+    border-radius: 0 200px;
+  }
+}
+
+@media (min-width: 650px) {
+  .inner-container {
+    -moz-border-radius: 0 220px;
+    -webkit-border-radius: 0 220px;
+    border-radius: 0 220px;
+  }
+}
+
+@media (min-width: 700px) {
+  .inner-container {
+    -moz-border-radius: 0 250px;
+    -webkit-border-radius: 0 250px;
+    border-radius: 0 250px;
+  }
+}
+
 .content {
   position: relative;
   display: flex;
   flex: 1;
   flex-direction: column;
+  align-items: center;
+}
+
+p {
+  text-shadow: 2px 2px #000;
+  text-align: center;
+  line-height: 32px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#title-svg {
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 30px auto;
+  padding: 15px 25px;
+  color: #fff;
+  border: 1px solid #00ca00;
+  border-radius: 5px;
+  background-color: #a3d291;
+  cursor: pointer;
+}
+
+/* -- ---------- --*/
+/* -- SVG IMAGES --*/
+/* -- ---------- --*/
+#title-svg {
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
+  max-width: 100%;
+}
+
+#title-svg path {
+  fill: #a3d291;
+}
+
+#title-svg g {
+  fill: #a3d291;
+}
+
+@media (min-width: 500px) {
+  #title-svg {
+    max-width: 80%;
+  }
 }
 
 #crest-svg {
   position: absolute;
-  height: 300px;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   opacity: .2;
+  width: 80%;
 }
 
 #crest-svg g {
@@ -99,7 +199,8 @@ html, body {
   position: absolute;
   top: -10px;
   left: -10px;
-  width: 150px;
+  max-width: 150px;
+  width: 25%;
 }
 
 #lion-svg path {
@@ -116,7 +217,8 @@ html, body {
   position: absolute;
   bottom: -10px;
   right: -10px;
-  width: 150px;
+  max-width: 150px;
+  width: 25%;
 }
 
 #stag-svg path {
@@ -133,7 +235,7 @@ html, body {
   position: absolute;
   top: -2px;
   right: -2px;
-  width: 150px;
+  width: 22%;
   transform: rotate(180deg);
 }
 
@@ -151,7 +253,7 @@ html, body {
   position: absolute;
   bottom: -2px;
   left: -2px;
-  width: 150px;
+  width: 22%;
 }
 
 #corner-bottom-left-svg path {
@@ -160,42 +262,5 @@ html, body {
 
 #corner-bottom-left-svg g {
   fill: #a3d291;
-}
-
-#title-svg {
-  -webkit-filter: drop-shadow(5px 5px 5px #000);
-  filter: drop-shadow(5px 5px 5px #000);
-  max-width: 80%;
-}
-
-#title-svg path {
-  fill: #a3d291;
-}
-
-#title-svg g {
-  fill: #a3d291;
-}
-
-.intro {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 16px;
-}
-
-.title {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 24px;
-}
-
-.btn-RSVP {
-  text-align: center;
-  margin: 30px auto;
-  padding: 20px 25px;
-  color: #fff;
-  border: 1px solid #00ca00;
-  border-radius: 5px;
-  background-color: #39ff14;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
