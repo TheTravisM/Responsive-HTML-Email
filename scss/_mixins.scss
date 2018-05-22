@@ -21,12 +21,12 @@
 }
 
 @mixin drop-shadow {
-  -webkit-filter: drop-shadow( 5px 5px 5px #000 ); 
-          filter: drop-shadow( 5px 5px 5px #000 );
+  -webkit-filter: drop-shadow( 5px 5px 5px rgba(0,0,0,.8) ); 
+          filter: drop-shadow( 5px 5px 5px rgba(0,0,0,.8) );
 }
 
-@mixin drop-shadow-text {
-  text-shadow: 2px 2px #000;
+@mixin text-shadow {
+  text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 }
 
 @mixin flex-box-default {

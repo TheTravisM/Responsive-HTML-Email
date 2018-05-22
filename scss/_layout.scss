@@ -41,7 +41,7 @@
 }
 
 p { 
-  @include drop-shadow-text;
+  @include text-shadow;
   text-align: center;
   line-height: 32px;
   font-size: 24px;
@@ -49,25 +49,27 @@ p {
   margin-bottom: 20px; 
 }
 
-.intro { }
-
 #title-svg {
   margin-bottom: 20px;
 }
 
-.date { }
-
-.location { }
-
 .btn {
   @include sans-font;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+  text-shadow: 0px 0px 3px $secondary-color-dark;
   margin: 30px auto;
   padding: 15px 25px;
   color: #fff;
-  border: 1px solid $secondary-color-dark;
+  border: 1px solid $secondary-color-light;
   border-radius: 5px;
   background-color: $mint;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-color-dark;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+  }
 }
 
 .btn-RSVP {

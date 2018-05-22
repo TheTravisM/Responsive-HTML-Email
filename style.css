@@ -133,7 +133,7 @@ html, body {
 }
 
 p {
-  text-shadow: 2px 2px #000;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   text-align: center;
   line-height: 32px;
   font-size: 24px;
@@ -147,21 +147,28 @@ p {
 
 .btn {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 3px #00ca00;
   margin: 30px auto;
   padding: 15px 25px;
   color: #fff;
-  border: 1px solid #00ca00;
+  border: 1px solid #82ff5b;
   border-radius: 5px;
   background-color: #a3d291;
   cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #00ca00;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* -- ---------- --*/
 /* -- SVG IMAGES --*/
 /* -- ---------- --*/
 #title-svg {
-  -webkit-filter: drop-shadow(5px 5px 5px #000);
-  filter: drop-shadow(5px 5px 5px #000);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
   max-width: 100%;
 }
 
@@ -194,8 +201,8 @@ p {
 }
 
 #lion-svg {
-  -webkit-filter: drop-shadow(5px 5px 5px #000);
-  filter: drop-shadow(5px 5px 5px #000);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
   position: absolute;
   top: -10px;
   left: -10px;
@@ -212,8 +219,8 @@ p {
 }
 
 #stag-svg {
-  -webkit-filter: drop-shadow(5px 5px 5px #000);
-  filter: drop-shadow(5px 5px 5px #000);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
   position: absolute;
   bottom: -10px;
   right: -10px;
@@ -230,8 +237,8 @@ p {
 }
 
 #corner-top-right-svg {
-  -webkit-filter: drop-shadow(5px 5px 5px #000);
-  filter: drop-shadow(5px 5px 5px #000);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
   position: absolute;
   top: -2px;
   right: -2px;
@@ -248,8 +255,8 @@ p {
 }
 
 #corner-bottom-left-svg {
-  -webkit-filter: drop-shadow(5px 5px 5px #000);
-  filter: drop-shadow(5px 5px 5px #000);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
   position: absolute;
   bottom: -2px;
   left: -2px;
