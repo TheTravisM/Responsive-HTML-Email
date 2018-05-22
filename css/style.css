@@ -23,6 +23,34 @@ html, body {
   height: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0 none;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+a img {
+  border: 0 none;
+}
+
+.imageFix {
+  display: block;
+}
+
+#bodyTable {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
 /* -- ------ --*/
 /* -- Layout --*/
 /* -- ------ --*/
@@ -37,6 +65,8 @@ html, body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex: 1;
   color: #a3d291;
@@ -45,6 +75,8 @@ html, body {
 }
 
 .inner-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex: 1;
   background: #543d7c;
@@ -126,6 +158,8 @@ html, body {
 
 .content {
   position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex: 1;
   flex-direction: column;
