@@ -40,7 +40,8 @@
   align-items: center;
 }
 
-p { 
+p,
+.text { 
   @include text-shadow;
   text-align: center;
   line-height: 32px;
