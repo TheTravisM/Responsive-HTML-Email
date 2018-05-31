@@ -100,13 +100,12 @@ table.view-in-browser a {
 .inner-container {
   background-color: #543d7c;
   background: #543d7c;
-  background-color: #543d7c;
   /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, rgba(84, 61, 124, 0.9) 50%, rgba(36, 16, 38, 0.5) 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
   /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(84, 61, 124, 0.9) 50%, rgba(36, 16, 38, 0.5) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #543d7c 0%, #241026 99%);
   /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(84, 61, 124, 0.9) 50%, rgba(36, 16, 38, 0.5) 100%);
+  background: radial-gradient(ellipse at center, #543d7c 0%, #241026 99%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#543d7c', endColorstr='#241026', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
@@ -185,11 +184,6 @@ table.content {
   max-width: 600px;
 }
 
-table.content .content-th {
-  text-align: center;
-  margin: 0 auto;
-}
-
 p,
 .text {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -208,23 +202,21 @@ img.header-title {
 
 .btn {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #a3d291;
-  border: 1px solid #148040;
-  border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  color: #fff;
   display: inline-block;
   text-shadow: 0px 0px 3px #00ca00;
   margin: 30px auto;
   padding: 15px 25px;
+  color: #fff;
+  border: 1px solid #148040;
+  border-radius: 5px;
+  background-color: #a3d291;
   cursor: pointer;
 }
 
 .btn:hover, .btn:focus {
-  background-color: #4eb748;
+  background-color: #148040;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(0.99);
-  transform: scale(0.99);
 }
 
 /* -- ---------- --*/

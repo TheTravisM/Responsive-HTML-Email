@@ -4,6 +4,9 @@
 
 
 #bodyTable{
+  background-color: #fff;
+  color: $mint;
+  @include sans-serif-font;
   height:100% !important;
   margin:0;
   padding:0;
@@ -11,6 +14,7 @@
 }
 
 .container {
+  background-color: #241026; 
   @include radial-gradient-dark-purple;
   //@include flex-box-default;
   display: table;
@@ -19,14 +23,26 @@
   margin: 0 auto;
 }
 
-.inner-container {
-  //@include flex-box-default;
-  @include radial-gradient-dark-purple;
-  @include sans-serif-font;
+table.view-in-browser {
+  background: #000;
+  width: 100%;
+  text-align: center;
+  a {
+    @include sans-font;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
 
+.inner-container {
+  background-color: #543d7c;
+  @include radial-gradient-dark-purple-2;
+  @include sans-serif-font;
   display: table;
   text-align: center;
-
   border: 2px solid $mint;
   border-radius: 0 130px; 
   box-shadow: 0px 0px 20px #000;
@@ -50,6 +66,10 @@ table.content {
   display: table;
   text-align: center;
   max-width: 600px;
+  .content-th {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 p,
@@ -57,6 +77,7 @@ p,
   @include text-shadow;
   display: block;
   text-align: center;
+  text-transform: capitalize;
   line-height: 32px;
   font-size: 24px;
   letter-spacing: 2px;
@@ -70,21 +91,23 @@ img.header-title {
 
 .btn {
   @include sans-font;
+  background-color: $mint;
+  border: 1px solid #148040;
+  border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+  color: #fff;
   display: inline-block;
   text-shadow: 0px 0px 3px $secondary-color-dark;
   margin: 30px auto;
   padding: 15px 25px;
-  color: #fff;
-  border: 1px solid $secondary-color-light;
-  border-radius: 5px;
-  background-color: $mint;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: $secondary-color-dark;
+    background-color: #4eb748;
     box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    -webkit-transform: scale(.99);
+    transform: scale(.99);
   }
 }
 
